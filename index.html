@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latitude Tech Blog & Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Latitude Tech</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" class="btn-login">Log In</a></li>
+                <li><a href="#signup" class="btn-signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Insights & Technical Innovation</h1>
+            <p>Explore articles on modern full-stack web development, API engineering, and software design patterns.</p>
+            <a href="#articles" class="btn-primary">Explore Articles</a>
+        </div>
+    </section>
+    <section id="articles" class="container">
+        <h2 class="section-title">Latest Articles</h2>
+        <div class="card-grid">
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Code on laptop screen">
+                <div class="card-body">
+                    <span class="tag">Web Development</span>
+                    <h3>Building Modern Full-Stack Applications</h3>
+                    <p>Learn how to connect HTML5 frontends with Node.js and MongoDB backends cleanly.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Cybersecurity code concept">
+                <div class="card-body">
+                    <span class="tag">Engineering</span>
+                    <h3>Understanding MVC Architecture</h3>
+                    <p>A step-by-step dive into separating models, views, and controllers for maintainable code.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Developer setup with code">
+                <div class="card-body">
+                    <span class="tag">JavaScript</span>
+                    <h3>DOM Manipulation & REST APIs</h3>
+                    <p>Master standard Fetch requests and dynamic DOM updates using pure vanilla JavaScript.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    <section id="auth-section" class="container">
+        <div class="auth-grid">
+            
+            <!-- Log In Form -->
+            <div id="login" class="form-card">
+                <h2>Welcome Back</h2>
+                <p>Log in to access your personal dashboard.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Log In</button>
+                </form>
+            </div>
+            <div id="signup" class="form-card highlight-card">
+                <h2>Create an Account</h2>
+                <p>Join the community to read exclusive articles.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email Address</label>
+                        <input type="email" id="signup-email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Sign Up</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <div class="contact-box">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Have questions or feedback? Reach out to our team directly.</p>
+                <p><strong>Email:</strong> info@latitudetech.com</p>
+                <p><strong>Location:</strong> Ozoro, Delta State, Nigeria</p>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Your Name</label>
+                    <input type="text" id="contact-name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Your Email</label>
+                    <input type="email" id="contact-email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" rows="4" placeholder="How can we help you?" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Latitude Tech Partners Ltd. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
